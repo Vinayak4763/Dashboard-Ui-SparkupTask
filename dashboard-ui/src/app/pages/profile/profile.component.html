@@ -1,0 +1,107 @@
+<div class="top-navbar">
+    <div class="dark-mode-toggle">
+      <!-- Half-moon icon for dark mode -->
+      <i class="fa fa-moon" [class.active]="isDarkMode"></i>
+  
+      <!-- The toggle switch -->
+      <label class="switch">
+        <input type="checkbox" [checked]="isDarkMode" (change)="toggleDarkMode()" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  
+
+<div class="dashboard-container">
+    <!-- Sidebar -->
+    <app-sidebar></app-sidebar>
+  
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="profile-section">
+            <!-- Profile Header -->
+            <h2 class="profile-heading">YOUR PROFILE</h2>
+            <p class="profile-description">You have full control to manage your account settings.</p>
+
+            <!-- Profile Info Section -->
+            <div class="profile-info">
+                <div class="profile-info-left">
+                    <!-- Profile Box (Photo Below Name) -->
+                    <div class="profile-photo-box">
+                        <div class="profile-header">
+                            <span class="profile-name">Vinayak Soni</span>
+                        </div>
+                        <!-- Profile Image below Name -->
+                        <div class="profile-photo">
+                            <img src="assets/img/image.png" alt="Profile Photo" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-info-right">
+                    <!-- QR Code Box -->
+                    <div class="profile-qr-section">
+                        <h3 class="profile-qr-heading">Profile QR Code</h3>
+                        <div class="qr-code">
+                            <img src="assets/img/qr-code.jpg" alt="QR Code" />
+                        </div>
+                        <div class="qr-buttons">
+                            <button class="btn-print">Print Code</button>
+                            <button class="btn-update">Update Code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Default Wallet Section -->
+            <div class="default-wallet">
+                <div class="wallet-container">
+                    <span class="wallet-title">Default Wallet</span>
+                    <span class="wallet-currency">USD</span>
+                    <span class="wallet-action">
+                        <i class="fa fa-pencil"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Personal Information Box -->
+            <div class="personal-info-box">
+                <h3 class="personal-info-heading">Personal Information</h3>
+                <div class="contact-info">
+                    <div class="contact-left">
+                        <div class="contact-item">
+                            <label>Email Address:</label>
+                            <span>{{'vinayak.soni@email.com'}}</span>
+                        </div>
+                        <div class="contact-item">
+                            <label>Address 1:</label>
+                            <span>Street Name, City, Country</span>
+                        </div>
+                        <div class="contact-item">
+                            <label>Address 2:</label>
+                            <span>Street Name, City, Country</span>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-item">
+                            <label>City:</label>
+                            <span>New York</span>
+                        </div>
+                        <div class="contact-item">
+                            <label>State:</label>
+                            <span>New York</span>
+                        </div>
+                        <div class="contact-item">
+                            <label>Country:</label>
+                            <span>USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <label>Timezone:</label>
+                            <span>GMT-4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

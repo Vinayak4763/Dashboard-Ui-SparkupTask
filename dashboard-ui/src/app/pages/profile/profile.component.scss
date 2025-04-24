@@ -1,0 +1,261 @@
+
+.top-navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* The switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 26px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+  
+  /* Icon style */
+  .fa-moon {
+    font-size: 20px;
+    color: #333; /* Dark color for light mode */
+    transition: color 0.3s ease;
+    display: inline-block; /* Ensure it behaves as an inline element */
+  }
+  
+  /* Active state */
+  .fa-moon.active {
+    color: #fff; /* Lighter color when dark mode is active */
+  }
+  
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+app-sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 10;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+.profile-section {
+    margin-top: 20px;
+    background-color: #f5f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile-description {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-info-left, .profile-info-right {
+    width: 48%;
+}
+
+.profile-photo-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-photo {
+    margin-top: 15px;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-qr-section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.profile-qr-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.qr-code img {
+    width: 60%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.qr-buttons button {
+    background-color: #393398;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px; /* Adds gap between buttons */
+}
+
+.btn-print {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-update {
+    background-color: blue;
+}
+
+.default-wallet {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+
+.wallet-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wallet-action i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.wallet-currency {
+    font-size: 18px;
+    color: blue;
+}
+
+.personal-info-box {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+
+.personal-info-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-left, .contact-right {
+    width: 48%;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.contact-item label {
+    font-weight: bold;
+}
+
+.contact-item span {
+    display: block;
+    margin-top: 5px;
+}

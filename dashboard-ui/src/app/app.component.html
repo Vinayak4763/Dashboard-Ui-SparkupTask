@@ -1,0 +1,7 @@
+<div class="dark-mode-toggle">
+  <button (click)="toggleDarkMode()">
+    <i class="fa" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
+    {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+  </button>
+</div>
+<router-outlet></router-outlet>

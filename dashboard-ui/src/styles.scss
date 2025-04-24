@@ -1,0 +1,87 @@
+/* Default styles (Light Mode) */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif; /* Add your desired font */
+  }
+  
+  header, .sidebar, .content, .card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode styles */
+  body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text */
+  }
+  
+  /* Optional: Additional styles for dark mode */
+  button {
+    color: white;
+    background-color: #444; /* Dark button background */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555; /* Lighter button color on hover */
+  }
+  
+  /* Styling for dark mode toggle button */
+  .toggle-button {
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .toggle-button:hover {
+    background-color: #555;
+  }
+  
+  /* Header, Sidebar, and Other Regions */
+  body.dark-mode header,
+  body.dark-mode .header {
+    background-color: #333; /* Dark background for header */
+  }
+  
+  body.dark-mode .sidebar {
+    background-color: #222; /* Dark background for sidebar */
+  }
+  
+  body.dark-mode .content {
+    background-color: #1c1c1c; /* Dark content background */
+    color: white; /* Light text */
+  }
+  
+  /* Input fields, Textareas */
+  body.dark-mode input,
+  body.dark-mode textarea,
+  body.dark-mode select {
+    background-color: #333; /* Dark input background */
+    color: white; /* Light text in inputs */
+    border: 1px solid #555; /* Dark border for input */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Optional: Cards or other elements */
+  body.dark-mode .card {
+    background-color: #2c2c2c; /* Dark background for cards */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Links */
+  body.dark-mode a {
+    color: #bbb; /* Lighter link color in dark mode */
+  }
+  
+  body.dark-mode a:hover {
+    color: white; /* Links will be white when hovered */
+  }
+  
